@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* Regla @font-face */
+@font-face {
+  /* Me permite elegir un nombre de fuente para identificarla */
+  font-family: Urbanist-encabezados;
+  /* Donde está esa fuente */
+  src: url("Urbanist/static/PlusJakartaSans-Bold.ttf"); }
+
+/* Regla @font-face */
+@font-face {
+  /* Me permite elegir un nombre de fuente para identificarla */
+  font-family: Urbanist-parrafos;
+  /* Donde está esa fuente */
+  src: url("Urbanist/static/PlusJakartaSans-Light.ttf"); }
+
+/* Regla @font-face */
+@font-face {
+  /* Me permite elegir un nombre de fuente para identificarla */
+  font-family: Urbanist-menu;
+  /* Donde está esa fuente */
+  src: url("Urbanist/static/PlusJakartaSans-SemiBold.ttf"); }
+
+body {
+  background-image: url(images/Fondo.jpg);
+  background-size: cover; }
+
+iframe {
+  margin-left: 1rem; }
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style-type: none; }
+
+.bottom-menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.row {
+  margin-bottom: 0.5rem; }
+
+nav ul li {
+  transition: all 0.5s;
+  border: 1px solid #312816;
+  padding: 3vh;
+  background-color: #9b7d46;
+  width: 25%; }
+  nav ul li:hover {
+    transform: scale(1.1);
+    background-color: #d6c4a4; }
+  nav ul li a {
+    text-decoration: none;
+    color: #d6c4a4; }
+
+.bt-boot {
+  background-color: #e64f14;
+  color: #591f08;
+  border: 1px solid #9b7d46; }
+
+.bt-boot:hover {
+  background-color: #f08256; }
+
+h5 {
+  color: #591f08; }
+
+p {
+  color: #130602; }
+
+.fondito {
+  background-color: rgba(155, 125, 70, 0.5); }
+
+.footer {
+  background-color: #c6ae80; }
+
+p {
+  font-family: Urbanist-parrafos;
+  font-size: 0.9em; }
+
+h5 {
+  font-family: Urbanist-encabezados; }
+
+a {
+  font-family: Urbanist-menu; }

@@ -1,0 +1,50 @@
+//variables
+$marron: hsl(39, 38%, 44%);
+$caoba: hsl(17, 84%, 34%);
+$fondo1: hsla(39, 38%, 44%, 0.5);
+
+nav ul li {
+    transition: all 0.5s;
+    border: 1px solid darken($marron, 30%);
+    padding: 3vh;
+    background-color: ($marron);
+    width: 25%;
+    &:hover {
+        transform: scale(1.1);
+        background-color: lighten($marron, 30%);
+    }
+    a {
+        text-decoration: none;
+        color: lighten($marron, 30%);
+    } 
+}
+
+//extends
+%botones {
+    background-color: lighten($caoba, 15%);
+    color: darken($caoba, 15%);
+    border: 1px solid $marron;
+}
+
+.bt-boot {
+    @extend %botones;
+    &:hover {
+        background-color: lighten($caoba, 30%);
+    }
+}
+
+h5 {
+    color: darken($caoba, 15%);
+}
+
+p {
+    color: darken($caoba, 30%);
+}
+
+.fondito {
+    background-color: ($fondo1);
+}
+
+.footer {
+    background-color: lighten($marron, 20%);
+}

@@ -1,0 +1,18 @@
+//Listas
+$fuentes:
+Urbanist-menu,
+Urbanist-encabezados,
+Urbanist-parrafos;
+
+
+p {
+    font-family: nth($fuentes, 3);
+    font-size: 0.9em;
+}
+
+h5 {
+    font-family: nth($fuentes, 2);
+}
+a {
+    font-family: nth($fuentes, 1);
+}

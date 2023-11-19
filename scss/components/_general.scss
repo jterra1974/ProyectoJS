@@ -1,0 +1,32 @@
+/* Regla @font-face */
+@font-face {
+    /* Me permite elegir un nombre de fuente para identificarla */
+    font-family: Urbanist-encabezados;
+    /* Donde está esa fuente */
+    src: url('Urbanist/static/PlusJakartaSans-Bold.ttf');
+}
+
+/* Regla @font-face */
+@font-face {
+    /* Me permite elegir un nombre de fuente para identificarla */
+    font-family: Urbanist-parrafos;
+    /* Donde está esa fuente */
+    src: url('Urbanist/static/PlusJakartaSans-Light.ttf');
+}
+
+/* Regla @font-face */
+@font-face {
+    /* Me permite elegir un nombre de fuente para identificarla */
+    font-family: Urbanist-menu;
+    /* Donde está esa fuente */
+    src: url('Urbanist/static/PlusJakartaSans-SemiBold.ttf');
+}
+
+body {
+    background-image: url(images/Fondo.jpg);
+    background-size: cover;
+}
+
+iframe {
+    margin-left: 1rem;
+}

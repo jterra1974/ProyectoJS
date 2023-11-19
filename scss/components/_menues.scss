@@ -1,0 +1,16 @@
+// Mixins
+@mixin menu($ancho, $display, $alineacion) {
+     width: $ancho;
+     display: $display;
+     justify-content: $alineacion;
+ }
+
+ul {
+    @include menu(100%, flex, center);
+    list-style-type: none;
+}
+
+
+.bottom-menu ul {
+    @include menu(100%, flex, center);
+}

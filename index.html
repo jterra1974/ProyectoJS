@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="description" content="LGD arquitectos es una firma de arquitectura con presencia regional que opera en el campo de la arquitectura civil, corporativa y comercial.">
+
+        <meta name="keywords" content="Arquitectura, Edificios, Proyectos, Tecnologia, Ideas innovadoras, Paisajismo, Desarrollo Urbanistco, Sustentabilidad, Modernismo">
+
+        <meta property="og:title" content="LGD arquitectos.">
+        <meta property="og:url" content="https://lgdarquitectos.com/">
+        <meta property="og:description" content="LGD arquitectos es una firma de arquitectura que opera en el campo de la arquitectura civil, corporativa y comercial.">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+        
+        <!-- Link a la hoja de estilos -->
+        <link rel="stylesheet" href="style.css">
+        
+        <!--Responsive Meta Tag de Bootstrap -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <title>LGD Arquitectos - Trabajos</title>
+        <!-- Hojas de estilos Toastify-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    </head>
+    <body>
+    
+    <!--Comienzo header-->
+    <div class="container fondito">
+        <!-- Navbar de Bootstrap -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/Logotipo.gif" alt="Logo Empresa"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Trabajos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Contacto</a>
+                </li>
+                </ul>
+                
+            </div>
+            </div>
+        </nav>
+        <!--Fin header-->
+        <!-- Carrusel de imagenes -->
+    <!-- d-none: oculta en xs d-sm-block: la hace visible de ahí en más -->
+    <section class="row d-none d-sm-block">
+        <!-- Clase carrusel para invisibilizar-->
+        <div class="col-12">
+            <!-- Componente de Bootstrap -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/carrusel_02.jpg" class="d-block w-100" alt="Ejemplo de arquitectura moderna 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carrusel_04.jpg" class="d-block w-100" alt="Ejemplo de arquitectura moderna 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carrusel_03.jpg" class="d-block w-100" alt="Ejemplo de arquitectura moderna 3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+<!--Fin Carrusel de imagenes-->
+        <!--Trabajos-->
+        <section class="row justify-content-center">
+
+<!-- Boton para cargar los trabajos utilizando librería Sweet Alert-->
+            <button class="btn btn-primary" id="sweetAlertButton">Cargar trabajos</button>
+<!-- Buscador-->
+            <input id="inputSearch" type="search">
+<!-- Contenedor para el JS -->
+    <section class="row d-flex">
+            <div id="contenedor"></div>
+    </section>    
+        </section>
+        <!--Fin trabajos-->
+
+        <!--Comienzo footer-->
+        <div class="footer">
+            <div class="row">
+                <div class="col-4">
+                    <a href="index.html"><img src="images/Logotipo_chico.gif" alt="Logo LGD Chico"></a>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row">
+                <nav class="col bottom-menu">
+                    <ul>
+                        <li>
+                            <a href="#">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#">Historia</a>
+                        </li>
+                        <li>
+                            <a href="#">Trabajos</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+        <!-- Scripts -->
+        <!-- Script de Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+        <script src="./JS/Trabajos.js" >
+</body>
+</html>
